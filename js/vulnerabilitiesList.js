@@ -2,7 +2,10 @@ function proccessData(data){
         for(var i = 0; i<data.length; i++){
             var tr = document.createElement("tr");
             var id = document.createElement("td");
-            id.appendChild(document.createTextNode(data[i]["cveId"]));
+            var idLink = document.createElement("a");
+            idLink.setAttribute("href",data[i]["cveLink"]);
+            idLink.appendChild(document.createTextNode(data[i]["cveId"]));
+            id.appendChild(idLink);
             tr.appendChild(id);
             var descr = document.createElement("td");
             descr.className += "shortTd justificado";
