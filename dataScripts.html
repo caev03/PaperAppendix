@@ -77,56 +77,57 @@
         <div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
-                    <h1 class="brand-name">Vulnerabilities List</h1>
+                    <h1 class="brand-name">Data / Scripts</h1>
                     <hr>
                 </div>
-                <div class="col-lg-12">
-                    <div class="col-lg-1">
-
-                    </div>
-                    <div class="col-lg-5">
-                        <input type="text" class="form-control" id="myInput" onkeyup="filterTable()" placeholder="Filter table ...">
-                    </div>
-                    <div class="col-lg-4">
-                        <select class="form-control" id="selection" onchange="filterTable()">
-                          <option value="0">Id</option>
-                          <option value="1">Description</option>
-                          <option value="2">CWE Vulnerability Type</option>
-                          <option value="3">Score</option>
-                          <option value="4">Access Complexity</option>
-                          <option value="5">Availability Impact</option>
-                          <option value="6">Confidentialy Impact</option>
-                          <option value="7">Integrity Impact</option>
-                          <option value="8">Effects</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-1">
-                        <button onclick="cleanFilter()" type="button" class="btn">Limpiar Filtro</button>
-                    </div>
-                    <div class="col-lg-1">
-
-                    </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-success">
+						<!-- Default panel contents -->
+					  	<div class="panel-heading">Data</div>
+					  	<div class="panel-body">
+					    	<p>All the data obtained along the research is here. This are JSON files obtained from the scripts that are in the next section. Each one has at its right a brief description of the information stored. </p>
+					  	</div>
+					  	<!-- Table -->
+					  	<table class="table table-bordered">
+					    	<thead>
+					    		<tr>
+					    			<th>File</th>
+					    			<th>Description</th>
+					    		</tr>
+					    	</thead>
+					    	<tbody>
+					    		<tr>
+					    			<td><a href="./json/aAndroid_Vulnerabilities_complete.json" download>Android-Vulnerabilities-complete.json</a></td>
+					    			<td><p>This file has all the information from the android vulnerabilities.</p>
+					    			</td>
+					    		</tr>
+					    	</tbody>
+					  	</table>
+					</div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="table-responsive">
-                    <table class="table table-striped" id="myTable">
-                        <thead>
-                          <tr>
-                            <th class="center">Id</th>
-                            <th>Description</th>
-                            <th>CWE Vulnerability Type</th>
-                            <th class="center">Score</th>
-                            <th class="center">Access Complexity</th>
-                            <th class="center">Availability Impact</th>
-                            <th class="center">Confidentialy Impact</th>
-                            <th class="center">Integrity Impact</th>
-                            <th class="center">Effects</th>
-                          </tr>
-                        </thead>
-                        <tbody id="tableBody">
-                        </tbody>
-                    </table>
-                  </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-info">
+						<!-- Default panel contents -->
+					  	<div class="panel-heading">Scripts</div>
+					  	<div class="panel-body">
+					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum, ligula ut aliquam commodo, magna sapien molestie nisi, nec dapibus dui nisl eu lacus. Nulla facilisi. Sed vel eros risus. Vivamus et aliquet nisl. Curabitur quis viverra ligula. Sed placerat justo metus, non aliquet ligula feugiat eu. Nam aliquam ut lorem posuere laoreet.</p>
+					  	</div>
+					  	<!-- Table -->
+					  	<table class="table table-bordered">
+					    	<thead>
+					    		<tr>
+					    			<th>File</th>
+					    			<th>Description</th>
+					    		</tr>
+					    	</thead>
+					    	<tbody>
+					    		<tr>
+					    			<td><a href="index.html" download>Link</a></td>
+					    			<td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum, ligula ut aliquam commodo, magna sapien molestie nisi, nec dapibus dui nisl eu lacus. Nulla facilisi. Sed vel eros risus. Vivamus et aliquet nisl. Curabitur quis viverra ligula.</p></td>
+					    		</tr>
+					    	</tbody>
+					  	</table>
+					</div>
                 </div>
             </div>
         </div>
@@ -138,7 +139,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/vulnerabilitiesList.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
